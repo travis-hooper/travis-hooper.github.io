@@ -363,7 +363,7 @@ if (typeof jQuery === 'undefined') {
     var activeIndex = this.getItemIndex(active)
     var willWrap = (direction == 'prev' && activeIndex === 0)
                 || (direction == 'next' && activeIndex == (this.$items.length - 1))
-    if (willWrap && !this.options.wrap) return active
+  if (willWrap && !this.options.wrap) return active
     var delta = direction == 'prev' ? -1 : 1
     var itemIndex = (activeIndex + delta) % this.$items.length
     return this.$items.eq(itemIndex)
@@ -1413,7 +1413,7 @@ if (typeof jQuery === 'undefined') {
       if (this.options.animation) $tip.addClass('fade')
 
       var placement = typeof this.options.placement == 'function' ?
-        this.options.placement.call(this, $tip[0], this.$element[0]) :
+  this.options.placement.call(this, $tip[0], this.$element[0]) :
         this.options.placement
 
       var autoToken = /\s?auto?\s?/i
@@ -2086,7 +2086,7 @@ if (typeof jQuery === 'undefined') {
         element[0].offsetWidth // reflow for transition
         element.addClass('in')
       } else {
-        element.removeClass('fade')
+  element.removeClass('fade')
       }
 
       if (element.parent('.dropdown-menu').length) {

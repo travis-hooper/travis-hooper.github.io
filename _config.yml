@@ -1,28 +1,22 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Travis Hooper
+description: To be continued
+url: http://www.travishooper.com
+copyright: 2015 travishooper.com - All rights reserved
+markdown: kramdown
 
 # User setting
 owner:
-email:
-facebook_username:
-twitter_username:
-github_username:
-address:
-  - line:
-  - line:
-  # Feel free to add more lines here 
-telephone:
-copyright:
-
-# API settings
-google_api_key:
-
-# Build settings
-markdown: kramdown
+  first_name: Travis
+  last_name: Hooper
+  phone: 503-522-2046
+  email: travis.d.hooper@gmail.com
+  address:
+  street: 903 Norwell Lane
+  city: Pflugerville
+  state: TX
+  zip: 78660
+  accounts:
+  linkedin_url: www.linkedin.com/in/travisdhooper
+  github_url: www.github.com/th01
+  stackoverflow_url: www.stackoverflow.com/users/4010391/travis
