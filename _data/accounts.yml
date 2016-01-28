@@ -1,0 +1,23 @@
+- name: email
+  icon: envelope
+  url: mailto:travis.d.hooper@gmail.com
+
+- name: Phone
+  icon: phone
+  url: tel://503-522-2046
+
+- name: LinkedIn
+  icon: linkedin
+  url: http://www.linkedin.com/in/travisdhooper
+
+- name: GitHub
+  icon: github
+  url: http://www.github.com/th01
+
+- name: Stack Overflow
+  icon: stack-overflow
+  url: http://www.stackoverflow.com/users/4010391/travis
+
+- name: Resume
+  icon: paper-plane-o
+  tags: data-toggle="modal" data-target="#resumeModal" class='show-resume-modal'

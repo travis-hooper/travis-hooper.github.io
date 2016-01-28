@@ -1,0 +1,19 @@
+# Site settings
+title: Travis Hooper
+description: To be continued
+url: http://www.travishooper.com
+copyright: travishooper.com - All rights reserved
+markdown: kramdown
+
+# User setting
+owner:
+  first_name: Travis
+  last_name: Hooper
+  phone: 503-522-2046
+  email: travis.d.hooper@gmail.com
+  resume: travis_hooper_resume.pdf
+  address:
+    street: 903 Norwell Lane
+    city: Pflugerville
+    state: TX
+    zip: 78660
