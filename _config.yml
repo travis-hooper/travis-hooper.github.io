@@ -2,7 +2,7 @@
 title: Travis Hooper
 description: To be continued
 url: http://www.travishooper.com
-copyright: 2015 travishooper.com - All rights reserved
+copyright: travishooper.com - All rights reserved
 markdown: kramdown
 
 # User setting
@@ -12,11 +12,7 @@ owner:
   phone: 503-522-2046
   email: travis.d.hooper@gmail.com
   address:
-  street: 903 Norwell Lane
-  city: Pflugerville
-  state: TX
-  zip: 78660
-  accounts:
-  linkedin_url: www.linkedin.com/in/travisdhooper
-  github_url: www.github.com/th01
-  stackoverflow_url: www.stackoverflow.com/users/4010391/travis
+    street: 903 Norwell Lane
+    city: Pflugerville
+    state: TX
+    zip: 78660

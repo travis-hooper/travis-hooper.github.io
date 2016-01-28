@@ -1,0 +1,15 @@
+- name: Susan Hooper Esthetics
+  image: shskincare.png
+  url: http://www.shskincare.com
+
+- name: Rogue Rod Shop
+  image: roguerodshop.png
+  url: http://www.roguerodshop.com
+
+- name: Jumbalya
+  image: jumbalya.png
+  url: http://jumbalya.herokuapp.com
+
+- name: Goobrr
+  image: goobrr.png
+  url: http://goobrr.herokuapp.com
