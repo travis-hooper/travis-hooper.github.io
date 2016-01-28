@@ -29,12 +29,21 @@ $(function() {
 
 // Map scrolling behaviour
 $(document).ready(function() {
-  $('#map_iframe').addClass('scrolloff');
-  $('#map').on('click', function () {
-    $('#map_iframe').removeClass('scrolloff');
-  });
+    $('.account').hover(function() {
+        var $this = $(this);
+        var href = $this.attr('href');
+        var name = $this.data('name');
+        var description = (name + ': ' + href).replace(/(\w*\:\/*([\S]*)|\:\s$)$/, '$2');
+        var $accountDescription = $('#account-description');
+        $accountDescription.text(description);
+    });
 
-  $('#map_iframe').mouseleave(function  () {
     $('#map_iframe').addClass('scrolloff');
-  });
+    $('#map').on('click', function () {
+        $('#map_iframe').removeClass('scrolloff');
+    });
+
+    $('#map_iframe').mouseleave(function  () {
+        $('#map_iframe').addClass('scrolloff');
+    });
 });
