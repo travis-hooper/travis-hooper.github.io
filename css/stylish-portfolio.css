@@ -256,3 +256,8 @@ hr.small {
 footer {
   padding: 100px 0;
 }
+
+#resume {
+  height: 75vh;
+  width: 100%
+}

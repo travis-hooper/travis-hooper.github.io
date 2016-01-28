@@ -17,3 +17,7 @@
 - name: Stack Overflow
   icon: stack-overflow
   url: http://www.stackoverflow.com/users/4010391/travis
+
+- name: Resume
+  icon: paper-plane-o
+  tags: data-toggle="modal" data-target="#resumeModal" class='show-resume-modal'
