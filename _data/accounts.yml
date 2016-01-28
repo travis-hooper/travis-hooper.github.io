@@ -9,14 +9,17 @@
 - name: LinkedIn
   icon: linkedin
   url: http://www.linkedin.com/in/travisdhooper
+  tags: target="_blank"
 
 - name: GitHub
   icon: github
   url: http://www.github.com/th01
+  tags: target="_blank"
 
 - name: Stack Overflow
   icon: stack-overflow
   url: http://www.stackoverflow.com/users/4010391/travis
+  tags: target="_blank"
 
 - name: Resume
   icon: paper-plane-o
