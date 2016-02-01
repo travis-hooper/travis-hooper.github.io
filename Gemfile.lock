@@ -163,7 +163,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  kramdown
   octopress-minify-html
 
 BUNDLED WITH
