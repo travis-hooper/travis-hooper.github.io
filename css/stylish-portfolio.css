@@ -211,6 +211,7 @@ hr.small {
 
 .portfolio-item {
   margin-bottom: 30px;
+  background-color: #000;
 }
 
 .img-portfolio {
@@ -218,7 +219,7 @@ hr.small {
 }
 
 .img-portfolio:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 /* Call to Action */
