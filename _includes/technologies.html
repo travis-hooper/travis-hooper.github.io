@@ -2,52 +2,31 @@
 <section id="technologies" class="technologies bg-primary">
   <div class="container">
     <div class="row text-center">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h2>Technologies Proficient In</h2>
-        <hr class="small">
-        <div class="row">
-          {% for technology in site.data.technologies.proficient %}
-            <div class="col-md-3 col-sm-6">
-              <div class="service-item">
-                <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-{{ technology.icon }} fa-stack-1x text-primary"></i>
-              </span>
-                <h4>
-                  <strong>{{ technology.name }}</strong>
-                </h4>
-                <p>{{ technology.description }}</p>
-                <a href="{{ technology.url }}" target="_blank" class="btn btn-light">Homepage</a>
+      {% for level in site.data.technologies %}
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2>{{ level.name }}</h2>
+          <hr class="small">
+          <div class="row">
+            {% for technology in level.technologies %}
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-{{ technology.icon }} fa-stack-1x text-primary"></i>
+                </span>
+                  <h4>
+                    <strong>{{ technology.name }}</strong>
+                  </h4>
+                  <p>{{ technology.description }}</p>
+                  <a href="{{ technology.url }}" target="_blank" class="btn btn-light">Homepage</a>
+                </div>
               </div>
-            </div>
-          {% endfor %}
+            {% endfor %}
+          </div>
+          <!-- /.row (nested) -->
         </div>
-        <!-- /.row (nested) -->
-      </div>
-      <!-- /.col-lg-10 -->
-      <div class="col-lg-10 col-lg-offset-1">
-        <h2>Technologies Learning</h2>
-        <hr class="small">
-        <div class="row">
-          {% for technology in site.data.technologies.learning %}
-            <div class="col-md-3 col-sm-6">
-              <div class="service-item">
-                <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-{{ technology.icon }} fa-stack-1x text-primary"></i>
-              </span>
-                <h4>
-                  <strong>{{ technology.name }}</strong>
-                </h4>
-                <p>{{ technology.description }}</p>
-                <a href="{{ technology.url }}" target="_blank" class="btn btn-light">Homepage</a>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-        <!-- /.row (nested) -->
-      </div>
-      <!-- /.col-lg-10 -->
+        <!-- /.col-lg-10 -->
+      {% endfor %}
     </div>
     <!-- /.row -->
   </div>

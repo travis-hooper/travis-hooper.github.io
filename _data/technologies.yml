@@ -1,75 +1,78 @@
-proficient:
+- name: Technologies With Experties In
+  technologies:
+  - icon: diamond
+    name: Ruby
+    url: https://www.ruby-lang.org/en/
 
-- icon: diamond
-  name: Ruby
-  url: https://www.ruby-lang.org/en/
+  - icon: road
+    name: Rails
+    url: http://rubyonrails.org/
 
-- icon: road
-  name: Rails
-  url: http://rubyonrails.org/
+  - icon: html5
+    name: HTML
+    url: http://dev.w3.org/html5/html-author/
 
-- icon: html5
-  name: HTML
-  url: http://dev.w3.org/html5/html-author/
+  - icon: css3
+    name: CSS
+    url: https://www.w3.org/Style/CSS/
 
-- icon: css3
-  name: CSS
-  url: https://www.w3.org/Style/CSS/
+  - icon: git
+    name: git
+    url: https://git-scm.com/
 
-- icon: database
-  name: MySQL
-  url: https://www.mysql.com/
+  - icon: male
+    name: Jekyll
+    url: https://jekyllrb.com/  
 
-- icon: database
-  name: PostgreSQL
-  url: http://www.postgresql.org/
+- name: Technologies Proficient In
+  technologies:
+  - icon: database
+    name: MySQL
+    url: https://www.mysql.com/
 
-- icon: git
-  name: git
-  url: https://git-scm.com/
+  - icon: database
+    name: PostgreSQL
+    url: http://www.postgresql.org/
 
-- icon: linux
-  name: Linux
-  url: https://www.linux.com/
+  - icon: linux
+    name: Linux
+    url: https://www.linux.com/
 
-- icon: asterisk
-  name: Node.js
-  url: https://nodejs.org/en/
+  - icon: asterisk
+    name: Node.js
+    url: https://nodejs.org/en/
 
-- icon: rss
-  name: jquery
-  url: https://jquery.com/
+  - icon: rss
+    name: jquery
+    url: https://jquery.com/
 
-- icon: shield
-  name: Angular
-  url: https://angularjs.org/
+  - icon: shield
+    name: Angular
+    url: https://angularjs.org/
 
-- icon: male
-  name: Jekyll
-  url: https://jekyllrb.com/
 
-learning:
+- name: Technologies Learning
+  technologies:
+  - icon: flask
+    name: Elixir
+    url: http://elixir-lang.org/
 
-- icon: flask
-  name: Elixir
-  url: http://elixir-lang.org/
+  - icon: fire
+    name: Phoenix
+    url: http://www.phoenixframework.org/
 
-- icon: fire
-  name: Phoenix
-  url: http://www.phoenixframework.org/
+  - icon: rocket
+    name: Meteor
+    url: https://www.meteor.com/
 
-- icon: rocket
-  name: Meteor
-  url: https://www.meteor.com/
+  - icon: leaf
+    name: MongoDB
+    url: https://www.mongodb.com
 
-- icon: leaf
-  name: MongoDB
-  url: https://www.mongodb.com
+  - icon: fighter-jet
+    name: AeroSpike
+    url: http://www.aerospike.com/
 
-- icon: fighter-jet
-  name: AeroSpike
-  url: http://www.aerospike.com/
-
-- icon: registered
-  name: Rust
-  url: https://www.rust-lang.org/
+  - icon: registered
+    name: Rust
+    url: https://www.rust-lang.org/
