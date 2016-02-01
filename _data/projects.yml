@@ -1,15 +1,90 @@
 - name: Susan Hooper Esthetics
+  abbreviated_name: she
   image: shskincare.png
   url: http://shskincare.github.io
+  description: >
+    <p>
+    Out of my mother's fustration with updating her business website
+    (<a href="http://shskincare.github.io" target="_blank">shskincare.com</a>) with GoDaddy's site
+    building tools, I suggested that she should just let me build it out for her. Because the site
+    doesn't need much updating, I decided to again use Jekyll to build it out as a static site and
+    extract as much as I could into yaml files so that she might be able to do some of the updates
+    herself (or more than likely call me to do them for her).
+    </p>
 
 - name: Rogue Rod Shop
+  abbreviated_name: rrs
   image: roguerodshop.png
   url: http://www.roguerodshop.com
+  description: >
+    <p>
+    With my dad's upcoming retirement, I built<a href="http://www.roguerodshop.com" target="_blank">
+    RogueRodShop.com</a> for him to help advertise the cars he loves to build in his spare time. The
+    goals I had for this website were that it had to be a static site and the day to day operations
+    had to be handled by him. After searching through static site generators, I found that Jekyll
+    would be an excellent tool to build his website. I then built the overall layout design that he
+    would need for his business and created a command line interface (CLI) for him to add, remove
+    and edit the projects on the site. I made the CLI as user friendly as possible, making any
+    change to the website a breeze.
+    </p>
 
 - name: Jumbalya
+  abbreviated_name: jumbalya
   image: jumbalya.png
   url: http://jumbalya.herokuapp.com
+  description: >
+    <p>
+    <a href="http://jumbalya.herokuapp.com" target="_blank">Jumbalya</a> was originally written as a
+    Ruby text scrambling method (no password) that I wrote in a night for fun. It worked by taking
+    the original input text and assigning a numerical 2 digit code to each character
+    (e.g. A = 96 and ! = 99), then performing a number of systematic shifts, it converted the input
+    into something visually similar to what it returns now. I sat on the method for a few months
+    until I was finished at MakerSquare before I decided to build it out into a full blown web
+    application with some added modifications that I picked up along the way. One of the things I
+    discovered along the way was SHA-1, a cryptographic hash function that irreversibly but
+    consistently converts any text input into a 40 character hexadecimal number. I decided to
+    implement this into my original design by digesting a salted password with SHA-1, then use the
+    hexadecimal output to control both the shifts performed for the encryption method and the shifts
+    on where to grab the next value from the SHA-1 hash value. Long story short, I'm confident that
+    someone using anything other than brute-force attack, couldn't decrypt the output. But I'll buy
+    you a cookie if you can. Lastly, if for some reason I decide to change the encryption method
+    somewhere down the road, I added in some reverse compatibility by prefixing every output with
+    'aa'. The original decryption method will recognize the prefix and work accordingly. With a
+    working method in place, I decided to deploy 'Jumbalya' as a web application on Heroku with a
+    Sinatra back-end serving it as a single page application with two post routes for the encryption
+    and unencryption methods and AngularJS and Bootstrap to tie the front-end together.
+    </p>
 
 - name: Goobrr
+  abbreviated_name: goobrr
   image: goobrr.png
   url: http://goobrr.herokuapp.com
+  description: >
+    <p>
+    <a href="http://goobrr.herokuapp.com" target="_blank">GooBrr</a> is a Bar/Restaurant/Food
+    finding web application. Using the browsers Geolocation support and a user defined radius and
+    search term, GooBrr will find business that match the criteria and give the user the option to
+    either add the business to a results queue or pass. When the user runs out of businesses that
+    are available or whenever they would like to see their results, a side menu containing all of
+    the queued business that were a potential businesses will appear. The user can then narrow down
+    their list by removing a business from the list, or click to see directions at any time. The
+    user is then presented with directions from their current location and they also have the option
+    to have the directions sent to them via text message by entering their phone number. I was
+    inspired to develop this web application after continually being displeased with using Google
+    Maps, which will populate a map based off of a search term with matching locations around you,
+    but you have to select each one individually, which can be overwhelming in a dense metro area.
+    </p><p>
+    The technology that went into this web application starts with node.js and Express.js serving a
+    single GET route as a single page application. On the client side, the users location is
+    determined by the browsers support for geolocation, and if upon failing the user is prompted to
+    input their address, which will then locate them using Google Maps API. Upon submitting the
+    initial parameters, they are posted to the web sever, which then makes a Yelp API request
+    returns the data to the client. The data is manipulated in an array on the client side using
+    AngularJS remove businesses or add them to a selected business array. Due a 20 business
+    limitation from the Yelp API, subsequent requests are sent with an offset parameter to locate
+    more businesses when the user has exhausted the businesses in the current request. The
+    directions are handled through Google Maps API using the latitude and longitude of the client
+    provided from the initial browser geolocation and the latitude and longitude of the business as
+    provided from the Yelp API. The texting service is handled by a API request to TextBelt using a
+    user provided phone number.
+    <p>
