@@ -5,6 +5,9 @@ url: http://www.travishooper.com
 copyright: travishooper.com - All rights reserved
 markdown: kramdown
 env: production
+gems:
+- octopress-minify-html
+- kramdown
 
 # User setting
 owner:
