@@ -17,12 +17,12 @@
     url: https://www.w3.org/Style/CSS/
 
   - icon: git
-    name: git
+    name: Git
     url: https://git-scm.com/
 
   - icon: male
     name: Jekyll
-    url: https://jekyllrb.com/  
+    url: https://jekyllrb.com/
 
 - name: Technologies Proficient In
   technologies:
