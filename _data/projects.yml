@@ -34,25 +34,26 @@
   url: http://jumbalya.herokuapp.com
   description: >
     <p>
-    <a href="http://jumbalya.herokuapp.com" target="_blank">Jumbalya</a> was originally written as a
-    Ruby text scrambling method (no password) that I wrote in a night for fun. It worked by taking
-    the original input text and assigning a numerical 2 digit code to each character
-    (e.g. A = 96 and ! = 99), then performing a number of systematic shifts, it converted the input
-    into something visually similar to what it returns now. I sat on the method for a few months
-    until I was finished at MakerSquare before I decided to build it out into a full blown web
-    application with some added modifications that I picked up along the way. One of the things I
-    discovered along the way was SHA-1, a cryptographic hash function that irreversibly but
-    consistently converts any text input into a 40 character hexadecimal number. I decided to
-    implement this into my original design by digesting a salted password with SHA-1, then use the
-    hexadecimal output to control both the shifts performed for the encryption method and the shifts
-    on where to grab the next value from the SHA-1 hash value. Long story short, I'm confident that
-    someone using anything other than brute-force attack, couldn't decrypt the output. But I'll buy
-    you a cookie if you can. Lastly, if for some reason I decide to change the encryption method
-    somewhere down the road, I added in some reverse compatibility by prefixing every output with
-    'aa'. The original decryption method will recognize the prefix and work accordingly. With a
-    working method in place, I decided to deploy 'Jumbalya' as a web application on Heroku with a
-    Sinatra back-end serving it as a single page application with two post routes for the encryption
-    and unencryption methods and AngularJS and Bootstrap to tie the front-end together.
+    <a href="http://jumbalya.herokuapp.com" target="_blank">Jumbalya</a> is a text encryption that i
+    designed from the ground up. I originally designed it as CLI based Ruby text scrambling method
+    (no password) that I wrote in a night for fun. It worked by taking the original input text and
+    assigning a numerical 2 digit code to each character (e.g. A = 96 and ! = 99), then performing a
+    number of systematic shifts, it converted the input into something visually similar to what it
+    returns now. I sat on the method for a few months until I was finished at MakerSquare before I
+    decided to build it out into a full blown web application with some added modifications that I
+    picked up along the way. One of the things I discovered along the way was SHA-1, a cryptographic
+    hash function that irreversibly but consistently converts any text input into a 40 character
+    hexadecimal number. I decided to implement this into my original design by digesting a salted
+    password with SHA-1, then use the hexadecimal output to control both the shifts performed for
+    the encryption method and the shifts on where to grab the next value from the SHA-1 hash value.
+    Long story short, I'm confident that someone using anything other than brute-force attack,
+    couldn't decrypt the output. Lastly, if for some reason I decide to change the encryption method
+    somewhere down the road, I added in some reverse compatibility by prefixing every output string
+    with a version of the encryption method, so that I can change the method as I see fit and still
+    decript strings that were generated using the old method. With a working method in place, I
+    decided to deploy 'Jumbalya' as a web application on Heroku with a Sinatra back-end serving it
+    as a single page application with two post routes for the encryption and unencryption methods
+    and AngularJS and Bootstrap to tie the front-end together.
     </p>
 
 - name: Goobrr
@@ -73,14 +74,15 @@
     inspired to develop this web application after continually being displeased with using Google
     Maps, which will populate a map based off of a search term with matching locations around you,
     but you have to select each one individually, which can be overwhelming in a dense metro area.
-    </p><p>
-    The technology that went into this web application starts with node.js and Express.js serving a
-    single GET route as a single page application. On the client side, the users location is
+    </p>
+    <p>
+    The technology that went into this web application starts with Node.js and Express.js serving a
+    single GET route as a single page application. On the client side, the user's location is
     determined by the browsers support for geolocation, and if upon failing the user is prompted to
     input their address, which will then locate them using Google Maps API. Upon submitting the
-    initial parameters, they are posted to the web sever, which then makes a Yelp API request
+    initial parameters, they are posted to the web sever, which then makes a Yelp API request and
     returns the data to the client. The data is manipulated in an array on the client side using
-    AngularJS remove businesses or add them to a selected business array. Due a 20 business
+    AngularJS to remove businesses or add them to a selected business array. Due a 20 business
     limitation from the Yelp API, subsequent requests are sent with an offset parameter to locate
     more businesses when the user has exhausted the businesses in the current request. The
     directions are handled through Google Maps API using the latitude and longitude of the client
