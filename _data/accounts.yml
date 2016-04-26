@@ -13,7 +13,7 @@
 
 - name: GitHub
   icon: github
-  url: http://www.github.com/th01
+  url: http://www.github.com/travis-hooper
   tags: target="_blank"
 
 - name: Stack Overflow
